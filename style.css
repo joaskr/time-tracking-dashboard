@@ -190,3 +190,39 @@ h2 {
 .care-image-container {
   background-image: url(./images/icon-self-care.svg);
 }
+
+@media only screen and (min-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+  }
+  .user-container {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+  .work {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .play {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .study {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+  .exercise {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .social {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .care {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+}
