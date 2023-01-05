@@ -136,6 +136,10 @@ button {
   font-weight: 500;
 }
 
+.data-header img:hover {
+  filter: brightness(100);
+}
+
 h2 {
   font-weight: 300;
   font-size: 2rem;
