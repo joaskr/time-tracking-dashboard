@@ -1,5 +1,5 @@
 const controlBtn = document.querySelectorAll(".control-btn");
-const controlValueDisplay = document.querySelectorAll("#control-value");
+const controlValueDisplay = document.querySelectorAll(".control-value");
 let fetchedData;
 
 //set control value - daily/weekly/monthly and save to local storage
