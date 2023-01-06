@@ -4,13 +4,14 @@ let fetchedData;
 
 //set control value - daily/weekly/monthly and save to local storage
 let controlValue = localStorage.getItem("controlValue");
-let currentBtn = document.getElementById(controlValue);
-currentBtn.classList.add("active-btn");
 
 if (!controlValue) {
   controlValue = "weekly";
   localStorage.setItem("controlValue", "weekly");
 }
+
+let currentBtn = document.getElementById(controlValue);
+currentBtn.classList.add("active-btn");
 
 //add button handling - switching between modes
 controlBtn.forEach((btn) => {
